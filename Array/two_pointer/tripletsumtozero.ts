@@ -14,7 +14,8 @@ function searchTriplets(nums: number[]): number[][] {
   for (let i = 0; i < n - 2; i++) {
     if (i > 0 && newNums[i] == newNums[i - 1]) continue;
 
-    // formula -> left + right = -nums[i] == 0
+    // formula-1 -> left + right = -nums[i] == 0
+    // formula-2 => nums[left] + nums[right] + nums[i] = 0;
     let left = i + 1;
     let right = n - 1;
 

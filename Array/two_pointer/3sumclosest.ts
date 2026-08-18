@@ -18,6 +18,7 @@ function threeSumClosest(nums: number[], target: number): number {
             let sum = newNums[i] + newNums[left] + newNums[right];
 
             let diff = Math.abs(sum - target);
+            
             if (diff < max_diff) {
                 max_diff = diff;
                 res_sum = sum;
@@ -38,8 +39,8 @@ function threeSumClosest(nums: number[], target: number): number {
 }
 
 
-let nums = [-1,2,1,-4];
+let inputNums = [-1,2,1,-4];
 let target = 1;
 
-const res = threeSumClosest(nums, target);
+const res = threeSumClosest(inputNums, target);
 console.log(res);
